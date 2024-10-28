@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #13192F;
+    font-family: 'Inter', sans-serif;
+    
+}
+@media screen and (max-width: 390px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+}
