@@ -8,7 +8,7 @@
     width: Fixed (1,064px)px;
     padding: 60px 157px 60px 157px;
     gap: 28px;
-  
+    flex-direction: column;
     
 }
 
@@ -56,8 +56,14 @@
     cursor: pointer;/*change the mouse cursor to a hand icon when it hovers over an element.*/
     display: inline-block;
     text-align: center;
+    margin-bottom: 60px;
 }  
-
+.section-one img {
+    height: 420px;
+    gap: 0px;
+    border-radius: 22px 0px 0px 0px;
+    display: block;
+}
 @media screen and (max-width: 390px) {
   
 
@@ -68,5 +74,9 @@
 
     .description {
         padding: 0 20px;
+    }
+    .section-one img {
+        width: 100%;
+        height: auto;
     }
 }
