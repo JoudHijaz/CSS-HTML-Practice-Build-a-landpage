@@ -5,7 +5,6 @@
     align-items: center;
     text-align: center;
     padding: 20px 0;
-    background-color: #1a2238; /* Ensure background color matches */
 }
 
 .ribbons {
@@ -13,33 +12,60 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%; /* Set to full width */
-    max-width: 912px; /* Maximum width to contain the elements */
-    padding: 0 20px;
-    gap: 20px; /* Optional spacing between items */
+    width: 912px; /* Fixed width as specified */
+    padding: 0 154.59px 20px 154.59px; /* Right, Bottom, Left padding */
+    gap: 23.9px; /* Gap between items */
+    margin: 0 auto; /* Centering the container */
 }
 
 .ribbon-item {
+    position: relative;
+    width: 185px; /* Set width based on provided layout */
+    height: 56px; /* Set height based on provided layout */
     display: flex;
     flex-direction: column;
+    justify-content: center; /* Center text vertically */
     align-items: center;
-    color: #FFFFFF;
+    text-align: center;
+    color: #FFFFFF; /* White text color for readability */
+}
+
+.ribbon-item .container {
+    position: relative;
+    z-index: 9; /* Ensures text stays on top */
 }
 
 .ribbon-item .label {
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
+    margin-bottom: 5px; /* Space between label and stars or other elements */
 }
-
-.ribbon-item .store {
+.rating{
+    margin-top: 30px;
+}
+.rating p{
     font-size: 13px;
     font-weight: 600;
     line-height: 21px;
 }
 
+.ribbon-item .store  {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 21px;
+    margin-top: 5px; 
+}
+
 .ribbon-item img {
-    width: 185px;
-    height: 57px;
-    margin: 8px 0; /* Add vertical space between text and image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Match the ribbon-item width */
+    height: 100%; /* Match the ribbon-item height */
+    z-index: 1; /* Place it behind the text */
+}
+
+@media screen and (max-width: 390px) {
+   
 }
