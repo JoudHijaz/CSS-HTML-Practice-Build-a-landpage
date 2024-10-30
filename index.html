@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css-styles/section-two.css">
 
 </head>
+
 <body>
     <div class="header">
         <div class="div-container">
@@ -27,23 +29,34 @@
             <div class="button-container">
                 <button class="button">Download</button>
             </div>
+            <button class="toggle-nav-button" onclick="toggleNav()">☰</button>
         </div>
     </div>
+
+    <script>
+        function toggleNav() {
+            const list = document.querySelector('.header .list');
+            list.classList.toggle('active');
+        }
+    </script>
     <div class="section-one">
         <div class="content">
             <div class="title-container">Introducing regions and cities</div>
             <div class="heading">
                 <p class="heading-text">Achieve your </p>
                 <p class="heading-text">goals and trip <span>together</span></p>
-                
+
             </div>
             <div class="description">
-                <span class="description-text">Stay focused on the things you want to do before you die with our simple and beautiful app. Set goals, plan trips and make new unforgettable memories with friends.</span>
+                <span class="description-text">Stay focused on the things you want to do before you die with our simple
+                    and beautiful app. Set goals, plan trips and make new unforgettable memories with friends.</span>
             </div>
-            <button class="create-button">Create my list</button>   
+            <button class="create-button">Create my list</button>
         </div>
-        <img src="./assets/img/sectio-one/section-one.png" alt="section-one">
+        <img  class="section-one-image" src="./assets/img/section-one/section-one.png" alt="section-one">
+        <img class="world" src="./assets/img/section-one/header-world-dark.svg.png" alt="section-one">
     </div>
+
     <div class="section-two">
         <div class="ribbons">
             <div class="ribbon-item">
@@ -51,14 +64,14 @@
                     <p class="label">Apps We Love</p>
                     <p class="store">App Store</p>
                 </div>
-                <img src="./assets/img/section-two/ribbon-default-white.svg.png" alt="app-store">
+                <img src="./assets/img/section-two/ribbons/ribbon-default-white.svg.png" alt="app-store">
 
             </div>
             <div class="ribbon-item">
                 <div class="rating">
                     <p>4.8 out of 5</p>
                 </div>
-                <img src="./assets/img/section-two/ribbon-rating-white.svg.png" alt="app-store">
+                <img src="./assets/img/section-two/ribbons/ribbon-rating-white.svg.png" alt="app-store">
 
             </div>
             <div class="ribbon-item">
@@ -66,11 +79,83 @@
                     <p class="label">Trending Apps</p>
                     <p class="store">App Store</p>
                 </div>
-                <img src="./assets/img/section-two/ribbon-default-white.svg.png" alt="app-store">
-
+                <img src="./assets/img/section-two/ribbons/ribbon-default-white.svg.png" alt="app-store">
             </div>
-           
+        </div>
+        <div class="widget-one">
+            <div class="intro">
+                <p class="heading">Accomplish your goals</p>
+                <p class="description">Short and long-term goals will help you work
+                    towards something and boost motivation.
+                    With our bucket list app you can track your
+                    progress by adding tasks or organise goals in
+                    lists.</p>
+                <ul class="list">
+                    <li class="list-item">Collaborate with friends</li>
+                    <li class="list-item">Set tasks and reminders</li>
+                    <li class="list-item">Visualise with images</li>
+                </ul>
+            </div>
+            <div class="row-images">
+                <div class="container">
+                    <div class="sub-container">
+                        <div class="image">
+                            <img src="assets/img/section-two/widget-one/container-one/type_home_goals_1.png">
+                        </div>
+                        <div class="image">
+                            <img src="assets/img/section-two/widget-one/container-one/type_home_goals_2.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="sub-container">
+                        <div class="image">
+                            <img src="assets/img/section-two/widget-one/container-two/type_home_goals_3.png">
+                        </div>
+                        <div class="image">
+                            <img src="assets/img/section-two/widget-one/container-two/col.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="image">
+                        <img src="assets/img/section-two/widget-one/container-three/type_home_goals_5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="widget-two">
+            <div class="intro">
+                <p class="heading">Mark your visited places</p>
+                <p class="description">Keep track of places around the world you’ve been or want to visit in the future. Get inspired by
+                    new destinations, discover our curated guides or easily book tickets.</p>
+                <ul class="list">
+                    <li class="list-item">Mark 240+ countries</li>
+                    <li class="list-item">Mark 4.500+ regions</li>
+                    <li class="list-item">Mark 7.000+ cities</li>
+                </ul>
+            </div>
+            <div class="row-images">
+                <div class="container">
+                    <div class="image">
+                        <img src="assets/img/section-two/widget-two/container-one/type_home_maps_1.png" alt="">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="sub-container">
+                        <div class="image">
+                            <img src="assets/img/section-two/widget-two/container-two/type_home_maps_2.png">
+                        </div>
+                        <div class="image">
+                            <img src="assets/img/section-two/widget-two/container-two/type_home_maps_3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+        
 </body>
+
 </html>

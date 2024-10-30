@@ -1,10 +1,11 @@
 .section-two {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px 0;
+    position: relative; 
+    width: Fixed (1,064px)px;
+
 }
 
 .ribbons {
@@ -40,16 +41,18 @@
     line-height: 30px;
     margin-bottom: 5px;
 }
-.rating{
+
+.rating {
     margin-top: 30px;
 }
-.rating p{
+
+.rating p {
     font-size: 13px;
     font-weight: 600;
     line-height: 21px;
 }
 
-.ribbon-item .store  {
+.ribbon-item .store {
     font-size: 13px;
     font-weight: 600;
     line-height: 21px;
@@ -58,13 +61,100 @@
 
 .ribbon-item img {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%; 
     height: 100%; 
     z-index: 1; 
 }
 
-@media screen and (max-width: 390px) {
-   
+.widget-one, .widget-two{
+    display: flex;
+    flex-direction: column;
+    width: 912px;
+    align-items: center;
+    text-align: center;  
+    position: relative;
+    padding: 70px 0px 70px 0px;
+}
+.widget-one .intro, .widget-two .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; 
+}
+.widget-one .intro .heading, .widget-two .intro .heading {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 43.2px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.widget-one .intro .description, .widget-two .intro .description {
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 912px;
+
+
+}
+.widget-one .list, .widget-two .list {
+    justify-content: center;
+}
+.widget-one .list-item, .widget-two .list-item {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+
+}
+.widget-one .list-item{
+    color: #6962FF;
+}
+
+.widget-two .list-item{
+    color: #00BE90;
+}
+.widget-one .row-images, .widget-two .row-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.widget-one .row-images .container, .widget-two .row-images .container{
+    width:  (232px);
+}
+.widget-one .row-images .sub-container, .widget-two .row-images .sub-container{
+    padding: 16px;
+    gap: 16px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  
+    .ribbons {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+    .widget-one .description, .widget-two .description {
+    
+        padding: 0 20px;
+    }
+ 
+    .widget-one .list, .widget-two .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .widget-one .row-images, .widget-two .row-images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .widget-two .row-images .sub-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
