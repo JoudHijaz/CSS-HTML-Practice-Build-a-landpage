@@ -3,9 +3,13 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
     position: relative; 
-    width: Fixed (1,064px)px;
-
+    width: 100%;
+    max-width: 944px;
+    padding: 60px 20px;
+    gap: 15px;
+    margin: 0 auto;
 }
 
 .ribbons {
@@ -66,22 +70,26 @@
     z-index: 1; 
 }
 
-.widget-one, .widget-two{
+.widget-one, .widget-two, .widget-three, .widget-four
+, .widget-five{
     display: flex;
     flex-direction: column;
-    width: 912px;
+    width: 100%;
     align-items: center;
-    text-align: center;  
+    text-align: center; 
+    justify-content: center; 
     position: relative;
-    padding: 70px 0px 70px 0px;
+
 }
-.widget-one .intro, .widget-two .intro {
+.widget-one .intro, .widget-two .intro, .widget-three .intro, .widget-four .intro, .widget-four .intro .heading{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px; 
+    padding: 30px 30px;
+    text-align: center;
+    align-items: center;
 }
-.widget-one .intro .heading, .widget-two .intro .heading {
+.widget-one .intro .heading, .widget-two .intro .heading, .widget-three .intro .heading, .widget-four.intro .heading, .widget-five.intro .heading {
     font-size: 33px;
     font-weight: 700;
     line-height: 43.2px;
@@ -89,21 +97,27 @@
     color: #FFFFFF;
 
 }
-.widget-one .intro .description, .widget-two .intro .description {
+.widget-five .intro img{
+    width: 100%;
+}
+.widget-one .intro .description, .widget-two .intro .description, .widget-three .intro .description,.widget-four .intro .description, .widget-five .intro .description {
     font-size: 15px;
     font-weight: 400;
-    max-width: 912px;
+    line-height: 26px;
+    
 
 
 }
-.widget-one .list, .widget-two .list {
+.widget-one .list, .widget-two .list, .widget-three .list , .widget-four .list {
     justify-content: center;
+    
 }
-.widget-one .list-item, .widget-two .list-item {
+.widget-one .list-item, .widget-two .list-item, .widget-three.list-item, .widget-four.list-item {
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
     text-align: center;
+    margin: 0 auto;
 
 }
 .widget-one .list-item{
@@ -113,23 +127,51 @@
 .widget-two .list-item{
     color: #00BE90;
 }
-.widget-one .row-images, .widget-two .row-images{
+.widget-three .list-item{
+    color: #7C57F5;
+}
+.widget-four .list-item{
+    color: #ED5B7B;
+}
+.widget-one .row-images, .widget-two .row-images, .widget-three .row-images, .widget-four .row-images{
     display: flex;
     flex-direction: row;
     justify-content: center;
 
 }
-.widget-one .row-images .container, .widget-two .row-images .container{
-    width:  (232px);
+
+.widget-four .row-images{
+    gap: 8px;
+    width: 100%;
 }
-.widget-one .row-images .sub-container, .widget-two .row-images .sub-container{
-    padding: 16px;
+
+.widget-three .container .sub-container-one{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.widget-one.sub-container, .widget-two .sub-container {
+    gap: 8px;
+}
+.widget-one .row-images .container-one,.widget-one .row-images .container-two,.widget-one .row-images .container-three, .widget-two .row-images .container, .widget-three .row-images .container{
+    width: 100%;
+    gap: 8px;
+    
+}
+.widget-one .row-images, .widget-two .row-images, .widget-three .row-images {
+    gap: 8px;
+}
+
+.widget-two .row-images .container{
+    width: 100%;
+}
+
+.widget-three .row-images .subcontainer{
     gap: 16px;
 }
-
-
 @media screen and (max-width: 1024px) {
-  
+    
     .ribbons {
         flex-direction: column;
         width: 100%;
@@ -140,21 +182,39 @@
     
         padding: 0 20px;
     }
- 
-    .widget-one .list, .widget-two .list {
+    .widget-one .list, .widget-two .list, .widget-three .list, .widget-four .list {
+
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
-    .widget-one .row-images, .widget-two .row-images{
+    
+    .widget-one .row-images, .widget-two .row-images,
+     .widget-three .row-images, .widget-four .row-images{
         display: flex;
         flex-direction: column;
         align-items: center;
     
     }
+    .widget-two .container img{
+        width: 100%;
+    }
+    .widget-one .row-images .container-two .sub-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        }
     .widget-two .row-images .sub-container{
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+    .widget-one .row-images .container-one{
+        display: none;
+    }
+
+    .widget-three .container .sub-container-two{
+        display: none;
     }
 }

@@ -30,15 +30,17 @@
                 <button class="button">Download</button>
             </div>
             <button class="toggle-nav-button" onclick="toggleNav()">☰</button>
+
         </div>
+        <script>
+            function toggleNav() {
+                const list = document.querySelector('.header .list');
+                list.classList.toggle('active');
+            }
+        </script>
     </div>
 
-    <script>
-        function toggleNav() {
-            const list = document.querySelector('.header .list');
-            list.classList.toggle('active');
-        }
-    </script>
+
     <div class="section-one">
         <div class="content">
             <div class="title-container">Introducing regions and cities</div>
@@ -53,7 +55,7 @@
             </div>
             <button class="create-button">Create my list</button>
         </div>
-        <img  class="section-one-image" src="./assets/img/section-one/section-one.png" alt="section-one">
+        <img class="section-one-image" src="./assets/img/section-one/section-one.png" alt="section-one">
         <img class="world" src="./assets/img/section-one/header-world-dark.svg.png" alt="section-one">
     </div>
 
@@ -97,7 +99,7 @@
                 </ul>
             </div>
             <div class="row-images">
-                <div class="container">
+                <div class="container-one">
                     <div class="sub-container">
                         <div class="image">
                             <img src="assets/img/section-two/widget-one/container-one/type_home_goals_1.png">
@@ -108,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
+                <div class="container-two">
                     <div class="sub-container">
                         <div class="image">
                             <img src="assets/img/section-two/widget-one/container-two/type_home_goals_3.png">
@@ -118,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
+                <div class="container-three">
                     <div class="image">
                         <img src="assets/img/section-two/widget-one/container-three/type_home_goals_5.png" alt="">
                     </div>
@@ -128,7 +130,8 @@
         <div class="widget-two">
             <div class="intro">
                 <p class="heading">Mark your visited places</p>
-                <p class="description">Keep track of places around the world you’ve been or want to visit in the future. Get inspired by
+                <p class="description">Keep track of places around the world you’ve been or want to visit in the future.
+                    Get inspired by
                     new destinations, discover our curated guides or easily book tickets.</p>
                 <ul class="list">
                     <li class="list-item">Mark 240+ countries</li>
@@ -154,8 +157,75 @@
                 </div>
             </div>
         </div>
-    </div>
-        
+        <div class="widget-three">
+            <div class="intro">
+                <p class="heading">Plan your next trip</p>
+                <p class="description">Travel itineraries helps you prioritise, estimate costs and maximise your
+                    experiences. Plan your
+                    next day-by-day road trip with family or friends and get fully prepared to achieve it.</p>
+                <ul class="list">
+                    <li class="list-item">Interactive maps</li>
+                    <li class="list-item">Itinerary group planner</li>
+                    <li class="list-item">Manage reservations</li>
+                </ul>
+            </div>
+            <div class="row-images">
+                <div class="container">
+                    <div class="image">
+                        <img src="assets/img/section-two/widget-three/type_home_trips_1.png" alt="">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="sub-container">
+                        <div class="sub-container-one">
+                            <div class="image">
+                                <img src="assets/img/section-two/widget-three/type_home_trips_2.png">
+                            </div>
+                            <div class="image">
+                                <img src="assets/img/section-two/widget-three/div.col.png">
+                            </div>
+                        </div>
+                        <div class="sub-container-two">
+                            <div class="image">
+                                <img src="assets/img/section-two/widget-three/type_home_trips.png">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="widget-four">
+            <div class="intro">
+                <p class="heading">Collaborate with your friends</p>
+                <p class="description">Goals you’ve fulfilled will give you great memories to share with the world. Connect with your
+                    friends and family or meet new people to collaborate together.</p>
+                <ul class="list">
+                    <li class="list-item">Follow your friends</li>
+                    <li class="list-item">Collaborate together</li>
+                    <li class="list-item">Interact with people</li>
+                </ul>
+            </div>
+            <div class="row-images">
+                <div class="container">
+                    <div class="image">
+                        <img src="assets/img/section-two/widget-four/type_home_collaborate_1.png" alt="">
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="assets/img/section-two/widget-four/type_home_collaborate_2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="widget-five">
+            <div class="intro">
+                <p class="heading">Create your bucket list</p>
+                <p class="description">Losing focus on the things you want to achieve in life? We’ll keep you motivated and organised
+                    to accomplish your dreams.</p>
+                <img class="image" src="assets/img/section-two/widget-five/home-download1.png" alt="">
+            </div>
+        </div>
+    </div>       
 </body>
 
 </html>

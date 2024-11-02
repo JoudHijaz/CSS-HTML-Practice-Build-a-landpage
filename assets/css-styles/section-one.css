@@ -1,19 +1,18 @@
 .section-one {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: #13192F;
     align-items: center;
     position: relative; 
-    width: Fixed (1,064px)px;
-    padding: 60px 157px 60px 157px;
+    width: 100%;
+    max-width: 1096px; 
+    padding: 60px 20px; 
     gap: 28px;
-    flex-direction: column;
     z-index: 2;
     overflow: hidden;
-    
 }
-
 .content {
     max-width: 800px;
 }
@@ -55,7 +54,6 @@
     padding: 15px 30px;
     border-radius: 30px;
     cursor: pointer;/*change the mouse cursor to a hand icon when it hovers over an element.*/
-    display: inline-block;
     text-align: center;
     margin-bottom: 60px;
 }  
@@ -65,6 +63,7 @@
     border-radius: 22px 0px 0px 0px;
     display: block;
     position: relative;
+    width: 100%;
 }
 .section-one .world {
     position: absolute;
@@ -84,11 +83,5 @@
     .description {
         padding: 0 20px;
     }
-    .section-one .section-one-image  img{
-        position: relative;
-
-    }
-    .section-one .world{
-        
-    }
+    
 }
