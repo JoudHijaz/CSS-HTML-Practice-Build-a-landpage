@@ -1,0 +1,124 @@
+.footer {
+    background-color: #27325E; 
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+
+}
+.vector{
+width: 300px;
+height: 300px;
+overflow: ;
+
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: #FFFFFF;
+    gap: 30px;
+}
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.description, .made-in {
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #FFFFFF;
+    max-width: 300px;
+    margin-bottom: 10px; 
+}
+
+.list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px; 
+    flex-grow: 1;
+}
+
+.div-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.div-col h4 {
+    margin-bottom: 10px;
+   
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: left;
+
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-item {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    height: 29px; 
+
+}
+.Language-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 10px;
+}
+.Language-container img{
+    width: 16px;
+    height: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .footer-container {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: flex-start; /* Aligns columns to the left */
+        gap: 20px; /* Reduces gap for smaller screens */
+    }
+    
+    .list-container {
+        flex-direction: column; /* Stacks columns */
+        gap: 20px; /* Adjusts spacing between columns */
+    }
+    
+    .div-col {
+        min-width: 100%; /* Takes full width on small screens */
+    }
+
+}

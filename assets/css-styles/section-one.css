@@ -1,3 +1,5 @@
+
+
 .section-one {
     display: flex;
     flex-direction: column;
@@ -7,81 +9,91 @@
     align-items: center;
     position: relative; 
     width: 100%;
-    max-width: 1096px; 
-    padding: 60px 20px; 
-    gap: 28px;
     z-index: 2;
     overflow: hidden;
 }
 .content {
-    max-width: 800px;
+    padding: 60px 157px 0px 157px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
 }
 
 .title-container {
     font-size: 18px;
     font-weight: 500;
-    color: #AAB0CF;
-    margin-bottom: 20px;
+    color: #FFFFFF;
+    border: 1px solid #27325E; 
+    border-radius: 22px 22px 22px 22px;
+    border: 1px 0px 0px 0px;
+    padding: 0 18px 0 18px;
+    margin-top: 28;
+
+
+   
 }
 
-.heading {
+.section-one .heading-text {
     font-size: 56px;
     font-weight: 700;
     color: #FFFFFF;
-    margin-bottom: 30px;
+    padding: 0;
 }
 
-.heading span {
+.heading-text span {
     background: #FFFFFF33;
     display: inline;
     
 
 }
 
-.description {
+.section-one .content .description {
+    font-family: Inter;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.75;
-    color: #AAB0CF;
-    margin-bottom: 40px;
-    max-width: 600px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 700px;
+
 }
 
-.create-button {
+.section-one .create-button {
     background-color: #6962FF;
     color: #FFFFFF;
     font-size: 16px;
     padding: 15px 30px;
     border-radius: 30px;
-    cursor: pointer;/*change the mouse cursor to a hand icon when it hovers over an element.*/
+    cursor: pointer;
     text-align: center;
     margin-bottom: 60px;
 }  
 
 .section-one .section-one-image   {
-    height: 420px;
     border-radius: 22px 0px 0px 0px;
     display: block;
-    position: relative;
     width: 100%;
+    position: relative;
+    top: -73px;
 }
 .section-one .world {
-    position: absolute;
-    top: 0;
-    left: 0; 
-    width: 100%;
-    height: auto;
     z-index: 1;
+    overflow: visible; 
+    max-width: 11700px;
+    max-height: 2000px;
+    overflow: hidden;
+    position: absolute;
+    top: -36px;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (min-width: 600px) {
   
     .heading {
         font-size: 40px;
     }
 
-    .description {
-        padding: 0 20px;
-    }
+    
     
 }
