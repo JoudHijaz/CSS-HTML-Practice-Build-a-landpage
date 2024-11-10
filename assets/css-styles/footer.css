@@ -2,36 +2,41 @@
     background-color: #27325E; 
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 50px;
     box-sizing: border-box;
-    max-width: 1200px;
     width: 100%;
     position: relative;
     justify-content: center;
+    z-index: 1; 
+    overflow: hidden;
 
 }
-.vector{
-width: 300px;
-height: 300px;
-overflow: ;
-
+.vector {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    z-index: 0; 
+    
 }
-
+.vector img{
+    width: 400px;
+}
 .footer-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
     color: #FFFFFF;
     gap: 30px;
+    position: relative;
+    z-index: 2;
 }
 
 
 .logo {
     display: flex;
     flex-direction: column;
-    width: 100%;
-}
+max-width: 390px;}
 
 .logo img {
     width: 40px;
@@ -55,7 +60,7 @@ overflow: ;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 40px; 
+    gap: 30px; 
     flex-grow: 1;
 }
 
@@ -104,21 +109,39 @@ overflow: ;
     height: 16px;
 }
 
-@media screen and (max-width: 1024px) {
-
+@media screen and (max-width: 767px) {
     .footer-container {
-        flex-direction: column; /* Stacks items vertically */
-        align-items: flex-start; /* Aligns columns to the left */
-        gap: 20px; /* Reduces gap for smaller screens */
-    }
-    
-    .list-container {
-        flex-direction: column; /* Stacks columns */
-        gap: 20px; /* Adjusts spacing between columns */
-    }
-    
-    .div-col {
-        min-width: 100%; /* Takes full width on small screens */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
+    .div-col {
+        width: 48%;
+        margin-bottom: 20px; 
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 5px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .list-item {
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px; 
+        text-align: left; 
+    }
+
+    .Language-container {
+        display: flex;
+        align-items: center;
+        gap: 5px; 
+    }
 }
+

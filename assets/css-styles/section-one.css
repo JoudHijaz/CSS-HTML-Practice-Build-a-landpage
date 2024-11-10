@@ -11,6 +11,7 @@
     width: 100%;
     z-index: 2;
     overflow: hidden;
+
 }
 .content {
     padding: 60px 157px 0px 157px;
@@ -88,12 +89,14 @@
     top: -36px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 767) {
   
     .heading {
         font-size: 40px;
     }
 
-    
+    .section-one{
+        max-width: 100%;
+    }
     
 }
