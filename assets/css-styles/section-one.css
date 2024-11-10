@@ -1,0 +1,102 @@
+
+
+.section-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #13192F;
+    align-items: center;
+    position: relative; 
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+
+}
+.content {
+    padding: 60px 157px 0px 157px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+.title-container {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border: 1px solid #27325E; 
+    border-radius: 22px 22px 22px 22px;
+    border: 1px 0px 0px 0px;
+    padding: 0 18px 0 18px;
+    margin-top: 28;
+
+
+   
+}
+
+.section-one .heading-text {
+    font-size: 56px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 0;
+}
+
+.heading-text span {
+    background: #FFFFFF33;
+    display: inline;
+    
+
+}
+
+.section-one .content .description {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 700px;
+
+}
+
+.section-one .create-button {
+    background-color: #6962FF;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 60px;
+}  
+
+.section-one .section-one-image   {
+    border-radius: 22px 0px 0px 0px;
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -73px;
+}
+.section-one .world {
+    z-index: 1;
+    overflow: visible; 
+    max-width: 11700px;
+    max-height: 2000px;
+    overflow: hidden;
+    position: absolute;
+    top: -36px;
+}
+
+@media screen and (max-width: 767) {
+  
+    .heading {
+        font-size: 40px;
+    }
+
+    .section-one{
+        max-width: 100%;
+    }
+    
+}

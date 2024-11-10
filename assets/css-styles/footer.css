@@ -1,0 +1,147 @@
+.footer {
+    background-color: #27325E; 
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    z-index: 1; 
+    overflow: hidden;
+
+}
+.vector {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    z-index: 0; 
+    
+}
+.vector img{
+    width: 400px;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #FFFFFF;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+max-width: 390px;}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.description, .made-in {
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #FFFFFF;
+    max-width: 300px;
+    margin-bottom: 10px; 
+}
+
+.list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px; 
+    flex-grow: 1;
+}
+
+.div-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.div-col h4 {
+    margin-bottom: 10px;
+   
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: left;
+
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-item {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    height: 29px; 
+
+}
+.Language-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 10px;
+}
+.Language-container img{
+    width: 16px;
+    height: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .div-col {
+        width: 48%;
+        margin-bottom: 20px; 
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 5px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .list-item {
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px; 
+        text-align: left; 
+    }
+
+    .Language-container {
+        display: flex;
+        align-items: center;
+        gap: 5px; 
+    }
+}
+
